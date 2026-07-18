@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --background: #09090b;
+  --surface: #111827;
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --text: #ffffff;
+  --gray: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+body {
+  background-image:
+    radial-gradient(circle at top left, rgba(37,99,235,.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(124,58,237,.18), transparent 30%);
+}
+
+section {
+  padding: 100px 8%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#2563eb, #7c3aed);
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--gray);
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.glass {
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.glow {
+  box-shadow: 0 0 30px rgba(37,99,235,.3);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #2563eb, #7c3aed);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(37,99,235,.5);
+}
+
+.btn-secondary {
+  border: 1px solid #2563eb;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  transition: .3s;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+body {
+  background: #09090b;
+}
+
+button,
+a {
+  transition: all .3s ease;
+}
+.btn-secondary:hover {
+  background: rgba(37,99,235,.15);
+}

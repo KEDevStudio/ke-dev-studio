@@ -41,14 +41,18 @@ export const metadata: Metadata = {
 
   publisher: "KE Dev Studio",
 
-  metadataBase: new URL("https://kedevstudio.vercel.app"),
+  metadataBase: new URL("https://ke-dev-studio.vercel.app"),
+
+  verification: {
+    google: "Te7kSI9M_ajlfQmMhUG7MrFQC5pKNLTaz_pUCJjRitU",
+  },
 
   openGraph: {
     title: "KE Dev Studio",
     description:
       "Sites profissionais, rápidos e modernos para empresas e negócios.",
 
-    url: "https://kedevstudio.vercel.app",
+    url: "https://ke-dev-studio.vercel.app",
 
     siteName: "KE Dev Studio",
 
